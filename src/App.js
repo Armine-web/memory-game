@@ -1,9 +1,10 @@
+import { Game } from './board-game/game';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h1>Memory game</h1>
+        <Game />
     </div>
   );
 }

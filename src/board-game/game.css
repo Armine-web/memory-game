@@ -1,0 +1,24 @@
+.card-hidden {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+
+.card-revealed {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    color: #333;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+
+.text-muted {
+    font-size: 1.2rem;
+}
+
+.text-success {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
