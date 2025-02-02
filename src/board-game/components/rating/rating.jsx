@@ -13,7 +13,7 @@ export function Rating ({ rating=0, children }) {
     return (
         <div className="flx justify-center space-x-4">
             <h4 className="text-muted">{children}</h4>
-            {item.emoji}
+            {item.emoji} - {item.label}
         </div>
     )
 }

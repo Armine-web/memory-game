@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Button } from "../components/button/button"
 import { GameBoard } from "./components/game-board/game-board"
+import "./../board-game/game.css"
 
 
 
@@ -22,13 +23,13 @@ const handleResetGame = () => {
    
     return(
         <div className = "container text-center">
-            <h1 className="mb-4 text-primary"> Memory Game </h1>
+            <h1 className="mb-4"> Memory Game </h1>
             {gameStarted ? (<div className="card p-4 shadow-sm">
-                <h4 className="mb-3">Select Difficulty Level</h4>
+                <h4 className="mb-3 select-value" >Select Difficulty Level</h4>
                 <div className = "mb-3">
-                    <select 
+                    <select
                     value={level}
-                    className="form-select"
+                    className="form-select mb-4"
                     onChange={handleLevelChange}
                     >                      
                         <option value={6}> 6 cards</option>

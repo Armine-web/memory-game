@@ -44,7 +44,7 @@ export const GameBoard = ( {level, onResetGame})=> {
             {cardsRevealed ? (
                 <Button className = "btn-warning btn-lg mb-3" onClick = {handleHideCards} >Hide</Button>
             ) : (
-                <div className="mb-3 text-muted">
+                <div className="mb-3 text-white">
                     Start guessing by clicking cards!
                 </div>
             )}
@@ -83,10 +83,10 @@ const generateShufledCards = (level) => {
 
 const calculateRating = (corectAnswers, totalQuestions) => {
     const percentage = (corectAnswers / totalQuestions) * 100;
-    if (percentage >= 90) return 5;
-    if (percentage >= 75) return 4;
-    if (percentage >= 50) return 3;
-    if (percentage >= 25) return 2;
-    if (percentage >= 0) return 1;
+    if (percentage >= 90) return 4;
+    if (percentage >= 75) return 3;
+    if (percentage >= 50) return 2;
+    if (percentage >= 25) return 1;
+    if (percentage >= 0) return 0;
     return 0;
 }
